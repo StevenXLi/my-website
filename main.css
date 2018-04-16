@@ -31,11 +31,11 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .background:first-child {
-    background-image: url(https://s8.postimg.org/lf2udl5np/4_Aihmii.jpg);
+    background-image: url("back1.jpg");
     transform: translateY(-15vh);
 }
 
@@ -44,11 +44,11 @@ body {
 }
 
 .background:nth-child(2) {
-    background-image: url(https://s8.postimg.org/ow4wgk4px/ugqti_Lg.jpg);
+    background-image: url("back2.jpg");
 }
 
 .background:nth-child(3) {
-    background-image: url(https://s8.postimg.org/grwsbtiat/x_ZMOBTj.jpg);
+    background-image: url("back3.jpg");
 }
 
 /* Set stacking context of slides */
@@ -116,3 +116,9 @@ body {
 .background.down-scroll+.background:not(.down-scroll) .content-wrapper {
     transform: translateY(15vh);
 }
+
+p.bot-align {
+    margin: 0;
+}
+
+
