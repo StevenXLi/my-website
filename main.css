@@ -31,7 +31,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .background:first-child {
@@ -51,17 +51,29 @@ body {
     background-image: url("back3.jpg");
 }
 
+.background:nth-child(4) {
+    background-image: url("back4.jpg");
+}
+
+.background:nth-child(4):before {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
 /* Set stacking context of slides */
 
 .background:nth-child(1) {
-    z-index: 3;
+    z-index: 4;
 }
 
 .background:nth-child(2) {
-    z-index: 2;
+    z-index: 3;
 }
 
 .background:nth-child(3) {
+    z-index: 2;
+}
+
+.background:nth-child(4) {
     z-index: 1;
 }
 
@@ -81,8 +93,12 @@ body {
 }
 
 .content-title {
-    font-size: 12vh;
+    font-size: 9vh;
     line-height: 1.4;
+}
+
+.content-subtitle {
+    font-size: 3vh;
 }
 
 .background.up-scroll {
@@ -117,8 +133,44 @@ body {
     transform: translateY(15vh);
 }
 
-p.bot-align {
+.bot-align {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+p.no-pad {
     margin: 0;
 }
 
+.col1 {
+    float: left;
+    width: 30%;
+}
 
+.col2 {
+    float: left;
+    width: 30%;
+}
+
+.col3 {
+    float: left;
+    width: 30%;
+}
+
+.colwrapper {
+    padding-left: 10%;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1024px) {
+    .content-title {
+        font-size: 6vh;
+    }
+    .content-subtitle {
+        font-size: 2vh;
+    }
+}
